@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Nina ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Efek hujan ungu -->
+  <canvas id="rain"></canvas>
+
+  <!-- ===== LAYAR PEMBUKA ===== -->
+  <div id="intro" class="intro">
+    <div class="intro-content">
+      <h1 class="intro-title">Untuk Nina</h1>
+      <p class="intro-sub">Ada surat kecil buat kamu...</p>
+      <button id="openBtn" class="btn-open">Buka Surat ❤️</button>
+    </div>
+  </div>
+
+  <!-- ===== SURAT ===== -->
+  <main id="letter" class="letter hidden">
+    <article class="letter-card">
+
+      <h2 class="letter-title">Untuk Nina</h2>
+
+      <!-- ============================================== -->
+      <!--  TULIS SURAT KAMU DI SINI                      -->
+      <!--  Setiap paragraf pakai class="reveal"          -->
+      <!--  biar muncul satu-satu saat di-scroll          -->
+      <!-- ============================================== -->
+
+      <p class="reveal">Nina,</p>
+
+      <p class="reveal">
+        maaf yaa sayang aku udah buat kamu badmood dari kemarin
+      </p>
+
+      <p class="reveal">
+        Aku minta maaf.
+      </p>
+
+      <p class="reveal">
+        maaf kalau aku belum bisa jadi cowo yang sempurna buat kamu, 
+        aku sadar aku masih banyak kurangnya mulai dari sifat sampe perlakuan
+      </p>
+
+      <p class="reveal">
+        tapi aku selalu berusaha buat memperbaiki kekurangan aku, 
+        aku mau jadi cowo yang sempurna buat kamu
+      </p>
+
+      <p class="reveal">
+        cowo yang bisa jadi tempat teryaman kamu, 
+        cowo yang selalu ada di setiap sedih dan senang kamu, 
+        aku akan selalu usahain itu
+      </p>
+
+      <p class="reveal">
+        tapi tolong bimbing aku yaa sayangg
+        aku gaa akan bisa lakuin itu sendiri 
+        aku perlu bimbingan kamu, jadi ajari aku agar jadi cowo yang kamu mau
+      </p>
+
+      <p class="reveal">
+        sekali lagi aku minta maaf atas kesalahan aku
+      </p>
+
+      <p class="reveal">
+        Terimakasih sayang sudah selau pilih aku, 
+        aku selalu bersyukur bisa deket sama kamu, 
+        jangan pergi yaaaa.........
+        Love U
+      </p>
+
+      <p class="reveal signature">— dari aku, yang sayang kamu ❤️</p>
+
+      <!-- ============================================== -->
+      <!--  AKHIR SURAT                                   -->
+      <!-- ============================================== -->
+
+      <div class="letter-actions reveal">
+        <button id="replayBtn" class="btn-small">Baca Lagi</button>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Lagu (loop karena lagunya cuma sebentar) -->
+  <audio id="music" src="purple_rain.mp3" loop preload="auto"></audio>
+
+  <!-- Tombol musik pojok kanan atas -->
+  <button id="musicToggle" class="music-toggle" aria-label="Putar / Jeda musik">⏸</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
